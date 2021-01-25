@@ -1,0 +1,31 @@
+<div  *ngIf="books">
+    <mat-card #book 
+         class="container" 
+        *ngFor="let book of books" >
+        <div class="header">
+            <h3>{{book.volumeInfo.title}}</h3>
+            <img [src]="book.volumeInfo.imageLinks.smallThumbnail">
+        </div>
+        <span>
+            <span ><b>Rating:</b> {{ book.volumeInfo.ratingsCount }}</span><br><br>
+            <span> <b>Publisher:</b> {{ book.volumeInfo.publisher }}</span><br>
+            <span> <b>PageCount:</b> {{ book.volumeInfo.pageCount }}</span><br>
+            <span> <b>Language:</b> {{ book.volumeInfo.language }}</span><br>
+          </span>
+        
+          <br>
+
+          <p class="desc">{{book.volumeInfo.description}}</p>
+          <span>
+            <p><b>Written By:</b> <br>{{book.volumeInfo.publisher}} 
+          </span> 
+
+          <span class="footer">
+            <button mat-raised-button (click)="addToCart(book)">AddToCart</button>
+            <button class="buyButton" (click)="purchaseBook(book)" mat-raised-button>
+              Buy
+            </button>
+          </span>
+          
+    </mat-card>
+</div>

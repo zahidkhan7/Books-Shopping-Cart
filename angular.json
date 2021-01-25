@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Books-Shopping-Cart"
+    }
+  },
+  "defaultProject": "Books-Shopping-Cart",
+  "cli": {
+    "analytics": "71baa2c5-7f3e-49c5-aa5f-5128530d27ca"
+  }
 }

@@ -1,0 +1,55 @@
+p {
+    font-size: 18px;
+  }
+
+  mat-icon {
+    justify-content: right;
+    height: 20px;
+    width: 20px;
+  }
+
+div {
+    display: flex;
+    flex-direction: column;
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        .container {
+            cursor: pointer;
+            width: 550px;
+            height: 250px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin: 5px 0px 5px;
+            text-align: justify;
+            font-size: 15px;
+            font-style: normal;
+            mat-icon {
+                justify-content: right;
+                height: 20px;
+                width: 20px;
+              }
+            .header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                img {
+                  justify-content: right;
+                  height: 80px;
+                  width: 60px;
+                }
+               
+              }
+              span {
+                float: left;
+              }
+        }
+    }
+  }

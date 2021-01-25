@@ -1,0 +1,17 @@
+<div *ngIf="books" > 
+    <div #book *ngFor="let book of books">
+        <span >
+            <h2>{{book.volumeInfo.title}}</h2>
+            <img [src] ="book.volumeInfo.imageLinks.smallThumbnail">
+        </span>
+
+        <span>
+            <span><b>Written By:</b> {{book.volumeInfo.publisher}} </span>
+        </span>
+
+        <h3>Billing Address:</h3>>
+    
+    
+    </div>
+    
+</div>

@@ -1,0 +1,40 @@
+ div{
+     display: flex;
+     justify-content: center;
+     margin-top: 60px;
+ mat-card{
+    height: fit-content;
+     height: 400 px;
+     width: 700px;
+     border: 1px solid black;
+     .desc{
+         text-align: justify;
+         font-size: 15px;
+         font-weight: 3px;
+     }
+   .header{
+    
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img{
+            width: 120px;
+            height: 140px;
+        }
+ }
+ .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    button {
+      background-color: #e75480;
+      color: white;
+      margin-left: 5px;
+    }
+    .buyButton {
+      margin-left: 12px;
+    }
+ }
+}
+ }

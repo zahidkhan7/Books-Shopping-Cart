@@ -1,0 +1,23 @@
+<div *ngIf="books" > 
+
+
+<div class="main"  #book *ngFor="let book of books">
+   <mat-card #book *ngFor="let book of books" class="container">
+      <div class="header">
+        <h3>{{book.volumeInfo.title}}</h3>
+        <img [src]="book.volumeInfo.imageLinks.smallThumbnail" />
+      </div>
+
+     <span>
+       <p>{{book.volumeInfo.description}}</p>
+     </span>
+
+      <span>
+        <p><b>Written By:</b> <br>{{book.volumeInfo.publisher}} </p>
+        <mat-icon  (click)="removeFromCart(book.id)">remove_shopping_cart</mat-icon> 
+      </span>
+     
+   </mat-card>
+
+</div>
+</div>
